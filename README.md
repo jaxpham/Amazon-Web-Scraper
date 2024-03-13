@@ -1,17 +1,5 @@
 # Amazon-Web-Scraper
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ul>
-    <li><a href="##How the application works">How the application works</a></li>
-    <li><a href="##How to configure and use the application">How to configure and use the application</a></li>
-    <li><a href="##A brief discussion of any challenges faced and how they were overcome">A brief discussion of any challenges faced and how they were overcome</a></li>
-    <li><a href="##Future extension to the project that is desired">Future extension to the project that is desired</a></li>
-    <li><a href="##Any details on testing performed as part of the project to ensure the project meets the requirements">Any details on testing performed as part of the project to ensure the project meets the requirements</a></li>
-  </ul>
-</details>
-
 ## How the application works
 The application uses setInterval to scrape and log the price of an Amazon iPad 10th Generation with A14 Bionic chip, 10.9-inch Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue at a specified interval (current set at 10 seconds).
 If the the current price is less than the previous price it will also automatically send out an email to a specified email address. 
