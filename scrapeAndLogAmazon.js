@@ -18,7 +18,7 @@ const product = {
     notificationSent: ''
 };
 
-// Function to scrape data
+// Function to initate 
 async function scrapeAndLog() {
     await scrape(); // Call the scrape function
     logPriceChange(); // Call the logPriceChange function after scraping
@@ -45,11 +45,10 @@ async function scrape() {
         const priceNum = parseInt(price);
         product.currentPrice = priceNum;
         product.originalPrice = product.originalPrice || priceNum;
-        product.currentPrice = 5;
 
-        // Check for price change
+        // Logic to send email out for lower price
         if (product.currentPrice < product.originalPrice) {
-            sendPriceChangeEmail();
+            sendLowerPriceEmail();
             product.notificationSent = "Yes";
         } else {
             product.notificationSent = "No";
@@ -61,7 +60,7 @@ async function scrape() {
 }
 
 // Function to send email on price change
-function sendPriceChangeEmail() {
+function sendLowerPriceEmail() {
     try {
         const transporter = nodemailer.createTransport({
             service: process.env.EMAIL_SERVICE,
@@ -119,5 +118,5 @@ function logPriceChange() {
 
 }
 
-// Schedule scraping ever 10 seconds but can be changed to appropriate interval
+// Scheduled scraping for every 10 seconds for testing but realistically would scrape daily
 setInterval(scrapeAndLog, 10000); // 
