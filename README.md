@@ -4,11 +4,11 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ul>
-    <li><a href="#How the application works">How the application works</a></li>
-    <li><a href="#How to configure and use the application">How to configure and use the application</a></li>
-    <li><a href="#A brief discussion of any challenges faced and how they were overcome">A brief discussion of any challenges faced and how they were overcome</a></li>
-    <li><a href="Any additional features implemented beyond the basic requirements and / or any extension to the project that is desired">Any additional features implemented beyond the basic requirements and / or any extension to the project that is desired</a></li>
-    <li><a href="#Any details on testing performed as part of the project to ensure the project meets the requirements">Any details on testing performed as part of the project to ensure the project meets the requirements</a></li>
+    <li><a href="##How the application works">How the application works</a></li>
+    <li><a href="##How to configure and use the application">How to configure and use the application</a></li>
+    <li><a href="##A brief discussion of any challenges faced and how they were overcome">A brief discussion of any challenges faced and how they were overcome</a></li>
+    <li><a href="##Future extension to the project that is desired">Future extension to the project that is desired</a></li>
+    <li><a href="##Any details on testing performed as part of the project to ensure the project meets the requirements">Any details on testing performed as part of the project to ensure the project meets the requirements</a></li>
   </ul>
 </details>
 
