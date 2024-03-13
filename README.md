@@ -34,6 +34,16 @@ Tools used
 ```
 npm install
 ```
+**Set Up Environment Variables**
+
+Create a new file named `.env` in the root of your project and add the following content (gmail password must be generated for app specific):
+
+```env
+
+EMAIL_SERVICE = 'gmail'
+EMAIL_USER = 
+EMAIL_PASS = 
+```
 
 4. node scrapeAndLogAmazon.js
 
