@@ -18,10 +18,10 @@ const product = {
     notificationSent: ''
 };
 
-// Function to initate 
+// Function to initate scrape and log of price
 async function scrapeAndLog() {
-    await scrape(); // Call the scrape function
-    logPriceChange(); // Call the logPriceChange function after scraping
+    await scrape(); 
+    logPrice(); 
 }
 
 // Function to scrape data
@@ -45,6 +45,7 @@ async function scrape() {
         const priceNum = parseInt(price);
         product.currentPrice = priceNum;
         product.originalPrice = product.originalPrice || priceNum;
+        product.currentPrice = 5
 
         // Logic to send email out for lower price
         if (product.currentPrice < product.originalPrice) {
@@ -94,7 +95,7 @@ function sendLowerPriceEmail() {
 }
 
 // Function to log price change to file
-function logPriceChange() {
+function logPrice() {
 
     const timestamp = new Date().toLocaleString(); // Format timestamp
     const logEntry = `${timestamp}\t${product.name}\t$${product.originalPrice}\t$${product.currentPrice}\t${product.notificationSent}\n`;
