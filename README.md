@@ -20,9 +20,6 @@ npm install
 
 Create a new file named `.env` in the root of your project and add the following content:
 
-```env
-
-
 #GMAIL
 EMAIL_USER=
 EMAIL_PASS= (must be generated for app)
