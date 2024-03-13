@@ -1,7 +1,7 @@
 # Amazon-Web-Scraper
 
 ## How the application works
-The application uses setInterval to scrape and log the price of an Amazon iPad 10th Generation with A14 Bionic chip, 10.9-inch Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue at a specified interval (current set at 10 seconds).
+The application uses setInterval to scrape and log the price of an Amazon iPad 10th Generation with A14 Bionic chip, 10.9-inch Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue at a specified interval (currenttly set at 10 seconds but is configurable).
 If the the current price is less than the previous price it will also automatically send out an email to a specified email address. 
 
 ## How to configure and use the application
