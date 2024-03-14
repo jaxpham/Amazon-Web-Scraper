@@ -59,4 +59,4 @@ node scrapeAndLogAmazon.js
   4. Create UI pages displaying price changes / history.
 
 ## Any details on testing performed as part of the project to ensure the project meets the requirements
-  1. Tests performed was primarily using manual testing.
+  1. Tests performed include manual testing and console logging data.
