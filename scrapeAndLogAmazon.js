@@ -45,7 +45,6 @@ async function scrape() {
         const priceNum = parseInt(price);
         product.currentPrice = priceNum;
         product.originalPrice = product.originalPrice || priceNum;
-        product.currentPrice = 5
 
         // Logic to send email out for lower price
         if (product.currentPrice < product.originalPrice) {
